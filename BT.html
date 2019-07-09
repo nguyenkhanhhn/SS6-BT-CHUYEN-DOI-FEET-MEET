@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapdonvido" />
+<select id="donvi1">
+    <option value=1>feet</option>
+    <option value=0.305>meet</option>
+</select>
+<select id="donvi2">
+    <option value=1>feet</option>
+    <option value=0.305>meet</option>
+</select>
+<button type="button" onclick="chuyen()">Change</button>
+<div id="ketquatrave"></div>
+<script>
+    function chuyen() {
+        let input=document.getElementById('nhapdonvido').value;
+        let donvi1=document.getElementById('donvi1').value;
+        let donvi2=document.getElementById('donvi2').value;
+let ketqua;
+ketqua=input*donvi2/donvi1;
+document.getElementById('ketquatrave').innerHTML=ketqua;
+    }
+</script>
+</body>
+</html>
